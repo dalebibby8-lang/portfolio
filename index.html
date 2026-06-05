@@ -230,33 +230,25 @@
 
     /* ── HERO RIGHT — photo + floating cards ── */
     .hero-right {
-     .hero-right {
-       position:relative;
-       display:flex;
-       align-items:center;
-       justify-content:center;
-       min-height:580px;
-       overflow:hidden;
-       padding:80px;
-     } 
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 580px;
+    }
 
     .hero-photo {
-      width:420px;
-      height:560px;
-      border-radius:28px;
-      overflow:hidden;
-      position:relative;
-      z-index:2;
-      background:#111;
-      border:1px solid rgba(255,255,255,.08);
-      box-shadow:0 20px 60px rgba(0,0,0,.45);
-    }
-    .hero-image{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      object-position:center top;
+      width: 340px;
+      height: 440px;
+      border-radius: 20px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
     }
 
     .hero-photo-inner {
@@ -276,23 +268,19 @@
       padding: 1rem 1.25rem;
       z-index: 3;
       min-width: 160px;
-      max-width:180px;
     }
 
-   .float-card.top-right{
-     top:60px;
-     right:40px;
-   }
+    .float-card.top-right {
+      top: 2rem; right: -1rem;
+    }
 
-.float-card.mid-right{
-  bottom:140px;
-  right:20px;
-}
+    .float-card.bottom-left {
+      bottom: 3rem; left: -2rem;
+    }
 
-.float-card.bottom-left{
-  bottom:70px;
-  left:20px;
-}
+    .float-card.mid-right {
+      bottom: 8rem; right: -2rem;
+    }
 
     .float-card-icon {
       width: 32px; height: 32px;
@@ -862,16 +850,13 @@
     <div class="hero-left">
       <div class="hero-eyebrow">Hey, I'm</div>
       <h1 class="hero-name">DALE<br>BIBBY</h1>
-      <p class="hero-role"> Growth Marketer, Content Strategist &amp; <span>Brand Lead</span> </p>
-<p class="hero-desc"> Marketing lead at ALO Physiotherapy responsible for social media growth, website development, SEO strategy, content production and patient acquisition. Building systems that turn attention into bookings.
-</p>
+      <p class="hero-role">Growth Marketer, Content Strategist &amp; <span>Brand Lead</span></p>
+      <p class="hero-desc">Marketing lead at ALO Physiotherapy responsible for social media growth, website development, SEO strategy, content production and patient acquisition. Building systems that turn attention into bookings.</p>
       <div class="hero-tags">
-       <div class="hero-tags">
-  <span class="hero-tag">📈 Growth Strategy</span>
-  <span class="hero-tag">🎥 Content Production</span>
-  <span class="hero-tag">🌐 SEO & Websites</span>
-  <span class="hero-tag">📣 Paid Ads</span>
-</div>
+        <span class="hero-tag">📱 Social Media</span>
+        <span class="hero-tag">📣 Paid Ads</span>
+        <span class="hero-tag">🌐 SEO & Websites</span>
+        <span class="hero-tag">📈 Growth Strategy</span>
       </div>
       <div class="hero-btns">
         <a href="#work" class="btn-purple">View My Work &nbsp;→</a>
@@ -879,35 +864,25 @@
       </div>
     </div>
 
-    <div class="hero-right">
-      <!-- Photo -->
-      <div class="hero-photo">
-        <img src="images/ME.png" 
-          alt="Dale Bibby" 
-          class="hero-image">
-        </div>
-      </div>
+    <div class="hero-photo">
+    <img src="ME.jpg" alt="Dale Bibby" style="width:100%; height:100%; object-fit:cover;" />
+  </div>
 
       <!-- Float card: growth stat -->
       <div class="float-card top-right reveal">
         <div class="float-card-icon">📈</div>
-        <div class="float-card-num">1.2 Million</div>
+        <div class="float-card-num">+1.2 Million%</div>
         <div class="float-card-label">Monthly Instagram Views<br><span style="color:var(--muted);font-size:0.65rem;">Avg. in 90 Days</span></div>
       </div>
 
       <!-- Float card: clients -->
-      <div class="float-card bottom-left reveal">
-
-<div class="float-card-num">
-End-to-End
-<span class="pulse-dot"></span>
-</div>
-
-<div class="float-card-label">
-Marketing Ownership
-</div>
+     <div class="float-card mid-right reveal">
+       <div class="avatar-count">2</div>
+       <div class="float-card-label">Brands Built <br>Across Multiple Channels
+  </div>
 
 </div>
+
       <!-- Float card: experience -->
       <div class="float-card bottom-left reveal">
         <div class="float-card-num" style="font-size:1.8rem;">5+ <span class="pulse-dot"></span></div>
@@ -920,20 +895,8 @@ Marketing Ownership
   <div class="about-services" id="about">
     <div>
       <div class="about-label">About Me</div>
-      <h2 class="about-title">
-Building healthcare brands through 
-<span class="accent">strategy, content and growth.</span>
-</h2>
-
-<p class="about-body">
-
-I work across every part of marketing at ALO Physiotherapy, from strategy through execution.
-
-My work includes SEO, website development, social media growth, content production, paid advertising, patient acquisition and brand positioning.
-
-Working in healthcare means balancing creativity with trust, education and measurable business outcomes.
-
-</p>
+      <h2 class="about-title">Building brands through  <span class="accent">strategy, content and growth.</span></h2>
+      <p class="about-body">I work across every part of marketing at ALO Physiotherapy, from strategy through execution. My work includes SEO, website development, social media growth, content production, paid advertising, patient acquisition and brand positioning. Working in healthcare means balancing creativity with trust, education and measurable business outcomes.</p>
       <a href="#contact" class="btn-sm">More About Me &nbsp;→</a>
     </div>
 
@@ -948,12 +911,12 @@ Working in healthcare means balancing creativity with trust, education and measu
         <div class="service-item">
           <div class="service-icon">🔍</div>
           <div class="service-name">SEO</div>
-          <div class="service-desc">On-page, off-page &amp; technical SEO that ranks.</div>
+          <div class="service-desc">Increasing visibility and patient enquiries through &amp; search. </div>
         </div>
         <div class="service-item">
           <div class="service-icon">🌐</div>
           <div class="service-name">Web Design &amp; Dev</div>
-          <div class="service-desc">Modern, responsive websites built to convert.</div>
+          <div class="service-desc">Designing websites that convert visitors into patients. </div>
         </div>
         <div class="service-item">
           <div class="service-icon">📣</div>
@@ -985,148 +948,116 @@ Working in healthcare means balancing creativity with trust, education and measu
     </div>
 
     <div class="work-filter">
-      <div class="work-filter">
+      <button class="filter-btn active" onclick="filterWork(this,'all')">All</button>
+      <button class="filter-btn" onclick="filterWork(this,'social')">Social</button>
+      <button class="filter-btn" onclick="filterWork(this,'seo')">SEO</button>
+      <button class="filter-btn" onclick="filterWork(this,'web')">Web</button>
+      <button class="filter-btn" onclick="filterWork(this,'content')">Content</button>
+      <button class="filter-btn" onclick="filterWork(this,'brand')">Branding</button>
+</div>
 
-<button class="filter-btn active" onclick="filterWork(this,'all')">All</button>
+   <div class="work-grid" id="workGrid">
 
-<button class="filter-btn" onclick="filterWork(this,'social')">Social</button>
+<div class="work-card reveal" data-cat="social">
 
-<button class="filter-btn" onclick="filterWork(this,'seo')">SEO</button>
+<div class="work-thumb thumb-ig">
+<div class="thumb-brand">ALO</div>
+</div>
 
-<button class="filter-btn" onclick="filterWork(this,'web')">Web</button>
+<div class="work-meta">
 
-<button class="filter-btn" onclick="filterWork(this,'content')">Content</button>
+<div class="work-cat">
+Social Media Growth
+</div>
 
-<button class="filter-btn" onclick="filterWork(this,'brand')">Branding</button>
+<div class="work-name">
+ALO Physiotherapy Instagram
+</div>
+
+<div class="work-stat">
+Educational content strategy & growth
+</div>
 
 </div>
 
-<div class="work-grid" id="workGrid">
-
-  <!-- ALO SOCIAL -->
-
-  <div class="work-card reveal" data-cat="social">
-
-    <div class="work-thumb">
-      <img 
-      src="images/alo-instagram.jpg"
-      alt="ALO Instagram"
-      class="work-image">
-    </div>
-
-    <div class="work-meta">
-
-      <div class="work-cat">
-        Social Media Growth
-      </div>
-
-      <div class="work-name">
-        ALO Physiotherapy Instagram
-      </div>
-
-      <div class="work-stat">
-        Educational content strategy & growth
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 
-  <!-- PHYSIO4MEN -->
+<div class="work-card reveal" data-cat="brand">
 
-  <div class="work-card reveal" data-cat="brand">
+<div class="work-thumb thumb-fb">
+<div class="thumb-brand">P4M</div>
+</div>
 
-    <div class="work-thumb">
-      <img 
-      src="images/physio4men.jpg"
-      alt="Physio4Men"
-      class="work-image">
-    </div>
+<div class="work-meta">
 
-    <div class="work-meta">
+<div class="work-cat">
+Brand Development
+</div>
 
-      <div class="work-cat">
-        Brand Development
-      </div>
+<div class="work-name">
+Physio4Men
+</div>
 
-      <div class="work-name">
-        Physio4Men
-      </div>
-
-      <div class="work-stat">
-        Audience building & positioning
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- SEO -->
-
-  <div class="work-card reveal" data-cat="seo">
-
-    <div class="work-thumb">
-      <img 
-      src="images/seo-results.jpg"
-      alt="SEO Growth"
-      class="work-image">
-    </div>
-
-    <div class="work-meta">
-
-      <div class="work-cat">
-        SEO Expansion
-      </div>
-
-      <div class="work-name">
-        Healthcare Search Growth
-      </div>
-
-      <div class="work-stat">
-        Landing pages & content systems
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- CONTENT -->
-
-  <div class="work-card reveal" data-cat="content">
-
-    <div class="work-thumb">
-      <img 
-      src="images/content-system.jpg"
-      alt="Content Production"
-      class="work-image">
-    </div>
-
-    <div class="work-meta">
-
-      <div class="work-cat">
-        Content Production
-      </div>
-
-      <div class="work-name">
-        Clinic Content Systems
-      </div>
-
-      <div class="work-stat">
-        Filming workflows & editing pipelines
-      </div>
-
-    </div>
-
-  </div>
+<div class="work-stat">
+Audience building & positioning
+</div>
 
 </div>
 
-</section>
-```
+</div>
 
+
+<div class="work-card reveal" data-cat="seo">
+
+<div class="work-thumb thumb-web">
+<div class="thumb-brand">SEO</div>
+</div>
+
+<div class="work-meta">
+
+<div class="work-cat">
+SEO Expansion
+</div>
+
+<div class="work-name">
+Healthcare Search Growth
+</div>
+
+<div class="work-stat">
+Landing pages & content systems
+</div>
+
+</div>
+
+</div>
+
+
+<div class="work-card reveal" data-cat="content">
+
+<div class="work-thumb thumb-tt">
+<div class="thumb-brand">MEDIA</div>
+</div>
+
+<div class="work-meta">
+
+<div class="work-cat">
+Content Production
+</div>
+
+<div class="work-name">
+Clinic Content Systems
+</div>
+
+<div class="work-stat">
+Filming workflows & editing pipelines
+</div>
+
+</div>
+
+</div>
+
+</div>
   </section>
 
   <!-- STATS BAND -->
@@ -1157,6 +1088,9 @@ Social • Web • Video
 Marketing Ownership
 </div>
 </div>
+  </div>
+  
+  </section>
 
   <!-- FOOTER / CONTACT -->
   <footer id="contact">
@@ -1208,5 +1142,3 @@ Marketing Ownership
 
 </body>
 </html>
-Done
-
