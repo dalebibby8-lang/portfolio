@@ -230,30 +230,44 @@
 
     /* ── HERO RIGHT — photo + floating cards ── */
     .hero-right {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 580px;
+     .hero-right {
+  position: relative;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  min-height:700px;
+
+  width:100%;
+
+  max-width:650px;
+
+  margin:auto;
+}
     }
 
     .hero-photo {
-  width: 380px;
-  height: 520px;
-  border-radius: 28px;
+  width:420px;
 
-  overflow: hidden;
+height:560px;
 
-  position: relative;
+border-radius:28px;
 
-  z-index: 2;
+overflow:hidden;
 
-  border: 1px solid rgba(255,255,255,.08);
+position:relative;
 
-  box-shadow:
-  0 20px 60px rgba(0,0,0,.45);
+z-index:2;
 
-  background:#111;
+background:#111;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+
 }
     .hero-image{
 
@@ -286,19 +300,32 @@ object-position:center top;
       padding: 1rem 1.25rem;
       z-index: 3;
       min-width: 160px;
+      max-width:180px;
     }
 
     .float-card.top-right {
-      top: 2rem; right: -1rem;
-    }
 
-    .float-card.bottom-left {
-      bottom: 3rem; left: -2rem;
-    }
+top:40px;
 
-    .float-card.mid-right {
-      bottom: 8rem; right: -2rem;
-    }
+right:0;
+
+}
+
+.float-card.mid-right {
+
+bottom:120px;
+
+right:-30px;
+
+}
+
+.float-card.bottom-left {
+
+bottom:50px;
+
+left:-40px;
+
+}
 
     .float-card-icon {
       width: 32px; height: 32px;
